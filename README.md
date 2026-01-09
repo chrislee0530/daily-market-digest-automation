@@ -11,10 +11,10 @@ The automation delivers a structured market summary for three equities (MSFT, TS
 ## 1. Stock Market Summary
 
 Involved Actions:
-- Scheduled recurrence trigger to run the workflow daily at a fixed market-time cadence
+- Scheduled recurrence trigger to run the workflow daily at a fixed time
 - Iterative processing over a predefined list of equity symbols (MSFT, TSLA, NVDA)
 - HTTP integration with Alpha Vantage API to retrieve real-time global quote data
-- Rate-limit handling via controlled delay between API calls
+- Rate-limit handling via controlled delay between API calls (Alpha Vantage API dooesn't allow consecutive API calls)
 - JSON parsing and field extraction for price and daily percentage change
 - HTML generation using string variables to construct a formatted price snapshot
 
@@ -27,7 +27,7 @@ Involved Actions:
 ## 2. News Report
 
 Involved Actions:
-- Iterative query generation per company using dynamic search terms
+- Iterative query generation per company using search terms
 - HTTP integration with NewsAPI to retrieve the most recent relevant headlines
 - Conditional filtering to ensure company-specific relevance
 - Structured parsing of article titles and URLs

@@ -1,6 +1,5 @@
 # daily-market-digest-automation
-Built a scheduled Power Automate workflow that aggregates real-time stock prices and curated financial news into a daily email digest.  
-The automation delivers a structured market summary for three equities (MSFT, TSLA, NVDA) using external financial and news APIs, and sends the report via Outlook email each morning.
+Built a scheduled Power Automate workflow that aggregates real-time stock prices and curated financial news into a daily email digest. The automation delivers a structured market summary for three equities (MSFT, TSLA, NVDA) using external financial and news APIs, and sends the report via Outlook email each morning.
 
 ## Tech Stack
 - Microsoft Power Automate
